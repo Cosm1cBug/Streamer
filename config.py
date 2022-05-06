@@ -58,7 +58,7 @@ class Config:
 
     #Optional Configuration
     SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'True'))
-    ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
+    ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "True"))
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", False)
     EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
     #others
@@ -67,7 +67,7 @@ class Config:
     RECORDING_TITLE=os.environ.get("RECORDING_TITLE", False)
     TIME_ZONE = os.environ.get("TIME_ZONE", "Asia/Kolkata")    
     IS_VIDEO=is_enabled(os.environ.get("IS_VIDEO", 'True'))
-    IS_LOOP=is_enabled(os.environ.get("IS_LOOP", 'True'))
+    IS_LOOP=is_enabled(os.environ.get("IS_LOOP", 'False'))
     DELAY=int(os.environ.get("DELAY", '10'))
     PORTRAIT=is_enabled(os.environ.get("PORTRAIT", 'False'))
     IS_VIDEO_RECORD=is_enabled(os.environ.get("IS_VIDEO_RECORD", 'True'))
